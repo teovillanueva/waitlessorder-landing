@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend Dev Course</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo2-01.jpg" alt="23andfour logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu">
+                    </li>
+                    <!-- <li><a href="#">Inicio</a></li> -->
+                    <li><a class="hovers" href="#">Servicios</a></li>
+                    <li><a class="hovers" href="#">Crea tu tienda</a></li>
+                    <li><a class="hovers" href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/prueba.png" alt="server graphic" class="server">
+            
+            <h1>Ordering was never so easy</h1>
+            <p class="subhead">Web app tomadora de pedidos para Hoteles y Estadios.</p>
+
+            <img src="images/logo3-01 (4).png" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li class="auto">
+                    <img src="images/escanea.png" alt="Calendar icon">
+                    
+                </li>
+                <li class="auto">
+                    <img src="images/ordena.png" alt="Calendar icon">
+                    
+                </li>
+                <li class="auto">
+                    <img src="images/abona.png" alt="Calendar icon">
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" alt="User testimonial picture">
+                        <blockquote>Waitless Order como conserje digital ha innovado la experiencia de mis huéspedes.</blockquote>
+                        <figcaption>Marcelo Mirenna <br> Sheraton Hotel Pilar & Convention Center</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="User testimonial picture">
+                        <blockquote>Gracias a que ahora los espectadores pueden ordenar desde su butaca hemos incrementado significativamente el consumo en el estadio.</blockquote>
+                        <figcaption> Francisco Zamudio <br> Unión Argentina de Rugby</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Comenzá a ofrecer otra forma de ordenar.</h2>
+        <a href="#" class="cta">¡Crea tu tienda!</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logowaitlessblanco.png" class="logo" alt="logo">
+                </a>
+                <p class="address">San Martin 662, Buenos Aires.<br>Argentina</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li><br>
+                    <li><a href="#">Privacy Policy</a></li><br>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+</html>
